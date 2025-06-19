@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">← Назад</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">О проекте</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Отзывы и обратная связь</a>
+            </li>
+            <li class="menu__item">
+              <a href="#contacts" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+          <div class="search-block">
+            <input class="search__input" type="search" placeholder="Поиск..." />
+            <button class="search__buttton">
+              <img class="search__icon" src="./images/search.svg" alt="Поиск" />
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Петербург: грани великого города</h1>
+
+          <div class="hero-images">
+            <img
+              class="hero__image"
+              src="./images/spb1.jpg"
+              alt="Фото Санкт-Петербурга"
+            />
+            <img
+              class="hero__image"
+              src="./images/spb2.jpg"
+              alt="Фото Санкт-Петербурга"
+            />
+            <img
+              class="hero__image"
+              src="./images/spb3.jpg"
+              alt="Фото Санкт-Петербурга"
+            />
+            <img
+              class="hero__image"
+              src="./images/spb4.jpg"
+              alt="Фото Санкт-Петербурга"
+            />
+            <img
+              class="hero__image"
+              src="./images/spb5.jpg"
+              alt="Фото Санкт-Петербурга"
+            />
+          </div>
+          <p class="hero__text">
+            Санкт-Петербург — город с душой и характером. Здесь имперская
+            архитектура, величественные набережные и музеи соседствуют с уютными
+            улочками и живой атмосферой. Мы собрали для вас самые интересные и
+            красивые места Петербурга — откройте их вместе с нами.
+          </p>
+        </div>
+      </section>
+
+      <section class="top-places">
+        <div class="container">
+          <h2 class="top-places__title">Топ 10 мест</h2>
+
+          <div id="top-places-carousel" class="splide top-places__splide">
+            <div class="splide__track">
+              <ul class="splide__list top-places__cards">
+                <!-- <li class="splide__slide top-places__card">test</li>
+                <li class="splide__slide top-places__card">test2</li>
+                <li class="splide__slide top-places__card">test3</li>
+                <li class="splide__slide top-places__card">test4</li> -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- <div class="top-places__cards">
+            <div class="top-places__card">
+              <img src="#" alt="" class="card__img" />
+              <span class="card__title">Эрмитаж</span>
+              <p class="card__text">Один из крупнейших музеев мира...</p>
+              <a href="#" class="card__link">Подробнее</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="container">
+          <h2 class="top-places__title">Топ 10 мест</h2>
+          <div class="top-places__cards">
+            <div class="top-places__card">
+              <img src="#" alt="" class="card__img" />
+              <p class="card__title">Эрмитаж</p>
+              <p class="card__text">
+                Один из крупнейших музеев мира, расположенный в Зимнем дворце.
+                Здесь хранится более 3 миллионов экспонатов, включая работы
+                Рембрандта, Леонардо да Винчи и Рубенса. Особенно впечатляют
+                интерьеры дворца и коллекция императорского фарфора...
+              </p>
+              <a href="#" class="card__link">Подробнее</a>
+            </div>
+          </div>
+          <div class="top-places__cards">
+            <div class="top-places__card">
+              <img src="#" alt="" class="card__img" />
+              <p class="card__title">Петропавловская крепость</p>
+              <p class="card__text">
+                Основанная Петром I в 1703 году, крепость стала первым
+                сооружением Петербурга. Здесь находится Петропавловский собор —
+                усыпальница русских императоров. В крепости также расположены
+                музеи и ежедневно проводится полуденный выстрел из пушки...
+              </p>
+              <a href="#" class="card__link">Подробнее</a>
+            </div>
+          </div>
+          <div class="top-places__cards">
+            <div class="top-places__card">
+              <img src="#" alt="" class="card__img" />
+              <p class="card__title">Исаакиевский собор</p>
+              <p class="card__text">
+                Один из крупнейших купольных соборов мира с высотой 101,5 м.
+                Внутри собора — мраморные колонны, мозаики и позолоченные
+                росписи. С колоннады открывается потрясающая панорама города...
+              </p>
+              <a href="#" class="card__link">Подробнее</a>
+            </div>
+          </div>
+          <div class="top-places__cards">
+            <div class="top-places__card">
+              <img src="#" alt="" class="card__img" />
+              <p class="card__title">Казанский собор</p>
+              <p class="card__text">
+                Расположен на Невском проспекте, построен в стиле русского
+                классицизма. Собор является действующим храмом и памятником
+                русской воинской славы...
+              </p>
+              <a href="#" class="card__link">Подробнее</a>
+            </div>
+          </div>
+          <div class="top-places__cards">
+            <div class="top-places__card">
+              <img src="#" alt="" class="card__img" />
+              <p class="card__title">Мариинский театр</p>
+              <p class="card__text">
+                Один из ведущих театров России, известен своими балетными и
+                оперными постановками. Здание театра является архитектурным
+                памятником и расположено на Исаакиевской площади...
+              </p>
+              <a href="#" class="card__link">Подробнее...</a>
+            </div>
+          </div>
+          <div class="top-places__cards">
+            <div class="top-places__card">
+              <img src="#" alt="" class="card__img" />
+              <p class="card__title">Русский музей</p>
+              <p class="card__text">
+                Музей, посвящённый русскому изобразительному искусству, от
+                иконописи до современного искусства. Здесь собраны работы таких
+                мастеров, как Репин, Шишкин, Кандинский и другие...
+              </p>
+              <a href="#" class="card__link">Подробнее...</a>
+            </div>
+          </div>
+          <div class="top-places__cards">
+            <div class="top-places__card">
+              <img src="#" alt="" class="card__img" />
+              <p class="card__title">Летний сад</p>
+              <p class="card__text">
+                Один из старейших парков города, основанный Петром I. Здесь
+                находятся скульптуры античных богов и фонтанами, а также
+                знаменитая аллея с мраморными бюстами...
+              </p>
+              <a href="#" class="card__link">Подробнее...</a>
+            </div>
+          </div>
+          <div class="top-places__cards">
+            <div class="top-places__card">
+              <img src="#" alt="" class="card__img" />
+              <p class="card__title">Екатерининский дворец в Царском Селе</p>
+              <p class="card__text">
+                Роскошный дворец в стиле рококо, известен своей Янтарной
+                комнатой. Дворец окружён великолепным парком с прудами и
+                фонтанами...
+              </p>
+              <a href="#" class="card__link">Подробнее...</a>
+            </div>
+          </div>
+          <div class="top-places__cards">
+            <div class="top-places__card">
+              <img src="#" alt="" class="card__img" />
+              <p class="card__title">Храм Спаса на Крови</p>
+              <p class="card__text">
+                Церковь, построенная на месте убийства императора Александра II.
+                Известна своими мозаиками, которые покрывают практически все
+                поверхности интерьера...
+              </p>
+              <a href="#" class="card__link">Подробнее...</a>
+            </div>
+          </div>
+          <div class="top-places__cards">
+            <div class="top-places__card">
+              <img src="#" alt="" class="card__img" />
+              <p class="card__title">Невский проспект</p>
+              <p class="card__text">
+                Главная улица города, протяжённостью 4,5 км, соединяющая
+                Адмиралтейство и Александро-Невскую лавру. Здесь расположены
+                Казанский собор, Гостиный двор и дом компании «Зингер»...
+              </p>
+              <a href="#" class="card__link">Подробне...</a>
+            </div>
+          </div>
+        </div> -->
+      </section>
+
+      <section class="districts">
+        <div class="container">
+          <h2 class="districts__title">Достопримечательности города</h2>
+
+          <div id="districts-carousel" class="splide districts__splide">
+            <div class="splide__track">
+              <ul class="splide__list districts__list">
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- <div class="districts__list">
+            <div class="districts__item">
+              <p class="district-title">Адмиралтейский район</p>
+              <p class="district-text"></p>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="landmarks">
+        <div class="container">
+          <h2 class="landmarks__title">Достопримечательности "" района</h2>
+        </div>
+      </section>
+
+      <section class="travel-companies">
+        <div class="container">
+          <h2 class="travel-companies__title">
+            Партнёры для идеального отдыха
+          </h2>
+          <div class="travel-companies__content">
+            <div class="travel-companies__block">
+              <div class="travel-companies__image">
+                <img
+                  class="company__photo"
+                  src="./images/city-stories.jpg"
+                  alt="Красный туристический автобус"
+                />
+              </div>
+              <div class="travel-companies__description">
+                <h3 class="company__name">Городские Истории</h3>
+                <p class="company__info">
+                  Откройте для себя новые горизонты вместе с нами! Мы организуем
+                  экскурсии для всех — от любителей истории до ценителей
+                  необычных маршрутов. Комфорт, профессионализм и индивидуальный
+                  подход к каждому клиенту — наш залог вашего незабываемого
+                  впечатления.
+                </p>
+                <a class="company__link">Перейти на сайт</a>
+              </div>
+            </div>
+            <div
+              class="travel-companies__block travel-companies__block_reverse"
+            >
+              <div class="travel-companies__description">
+                <h3 class="company__name">Открывай Город</h3>
+                <p class="company__info">
+                  Мы предлагаем увлекательные и познавательные экскурсии по
+                  самым интересным уголкам города и региона. Наши опытные гиды
+                  раскроют перед вами тайны истории, культуры и архитектуры,
+                  сделают ваше путешествие ярким и запоминающимся.
+                </p>
+                <a class="company__link">Перейти на сайт</a>
+              </div>
+              <div class="travel-companies__image">
+                <img
+                  class="company__photo"
+                  src="./images/open-city.jpg"
+                  alt="Лодка проплывает по каналу"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="container">
+          <h2 class="map__title">Карта города</h2>
+          <div class="map__content">
+            <iframe
+              class="iframe"
+              src="https://yandex.ru/map-widget/v1/?ll=30.314997%2C59.938784&z=11"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+        <form class="form" action="#">
+          <h2 class="form__title">Оставить отзыв</h2>
+          <div class="form__fields">
+            <input class="form__input" type="text" name="name" placeholder="Имя" />
+            <input class="form__input" type="tel" name="tel" placeholder="Ваш телефон" />
+            <textarea
+              class="form__textarea"
+              name="comment"
+              id="comment"
+              rows="4"
+              cols="40"
+              placeholder="Опишите впечатления..."
+            ></textarea>
+          <button class="form__button" type="submit">Отправить</button>
+          </div>
+        </form>
+
+        <!-- здесь сложно с неймингом -->
+        <div id="contacts" class="contacts">
+          <span class="contacts__title">Остались вопросы?</span>
+          <div class="contacts__line"></div>
+          <p class="contacts__text">Свяжитесь с нами</p>
+
+          <div class="contacts__info">
+            <div class="address">
+              <p class="address__title">Адрес</p>
+              <p class="address__text">Санкт-Петербург<br />ул. Энгельса</p>
+            </div>
+            <div class="telephone-mail">
+              <p class="telephone-mail__title">Контакты</p>
+              <div class="telephone">
+                <img src="" alt="" />
+                <span class="">+7 (000) 000-00-00</span>
+              </div>
+              <div class="mail">
+                <img src="" alt="" />
+                <span class="">somebody@mail.ru</span>
+              </div>
+
+              <div class="working-hours">
+                <p class="working-hours__title">Режим работы</p>
+                <p class="working-hours__text">
+                  Пн-Чт 09:00-18:00<br />Пт 09:00-16:45<br />Сб, Вс - выходной
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <img class="footer__image" src="images/river-boat.webp" alt="">
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

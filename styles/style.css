@@ -1,0 +1,478 @@
+@import './normalize.css';
+@import './fonts.css';
+
+
+:root {
+    --font-primary: 'Montserrat', 'Arial', sans-serif;
+    --font-secondary: 'Roboto', 'Arial', sans-serif;
+    --color-text: #1E1C18;
+  }
+
+html {
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    scroll-behavior: smooth;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1060px;
+    padding: 0 80px;
+    margin: 0 auto;
+
+    background-color: #FFFFFF;
+}
+
+/* header */
+.header .container {
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 30px;
+}
+.menu__list {
+    display: flex;
+}
+.menu__item {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    margin-right: 48px;
+    cursor: pointer;
+}
+
+.menu__item:last-child {
+    margin-right: 0px;
+}
+
+.menu__link {
+}
+
+.search-block {
+    display: flex;
+    border: 1px solid #C6C6C6;
+    border-radius: 5px;
+}
+
+.search__input {
+    padding: 16px 6px 16px 16px;
+    width: 223px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none ;
+    outline: none;
+}
+
+.search__buttton {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD200;
+    border-radius: 5px;
+    border: none ;
+    cursor: pointer;
+}
+
+.search__icon {
+    max-width: 100%;
+}
+
+/* hero */
+.hero .container {
+    padding: 0;
+}
+
+.hero-images {
+    position: relative;
+    width: 100%;
+    max-width: 1060px;
+    height: 520px;
+    overflow: hidden;
+}
+
+.hero__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero__image_visible {
+    opacity: 1;
+    z-index: 1;
+  }
+
+.hero__title {
+    position: absolute;
+    z-index: 10;
+    padding-left: 100px;
+    padding-top: 300px;
+    max-width: 783px;
+    font-size: 44px;
+    line-height: 57px;
+    color: #FFFFFF;
+}
+
+.hero__text {
+    width: 508px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 25px;
+    padding-right: 80px;
+    text-align: justify;
+    margin-left: auto;
+}
+
+/* top-places */
+
+.top-places__title {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-bottom: 34px;
+}
+
+.top-places__card {
+    display: flex;
+    flex-direction: column;
+    padding-right: 36px;
+}
+
+.card__img {
+    width: 273px;
+    height: 184px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 11px;
+}
+
+.card__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    max-width: 273px;
+    min-height: 46px;
+    margin-bottom: 10px;
+}
+
+.card__text {
+    font-family: var(--font-secondary);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    max-width: 273px;
+    margin-bottom: 30px;
+}
+
+.card__link {
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-top: auto;
+}
+
+
+
+/* districts */
+.districts__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 130%;
+    margin: 160px 0 40px;
+}
+
+.districts__list {
+}
+
+
+/* landmarks */
+.landmarks__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 58px;
+    color: #485564;
+}
+
+
+/* travel-companies */
+
+.travel-companies__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 94px;
+}
+.travel-companies__content {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+.travel-companies__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.travel-companies__image {
+    margin-bottom: 105px;
+    max-width: 431px;
+    height: 553px;
+}
+
+.company__photo {
+    width: 100%;
+    height: 100%;
+    /* max-width: 431px;
+    height: 553px; */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.travel-companies__description {
+    max-width: 405px;
+}
+
+.travel-companies__block_reverse {
+    padding-top: 59px;
+}
+
+.travel-companies__block_reverse .travel-companies__image {
+    margin-bottom: 0px;
+    margin-top: 133px;
+}
+
+.company__name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 24px;
+}
+
+.company__info {
+    font-family: var(--font-secondary);
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 64px;
+}
+
+.company__link {
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+
+/* map */
+
+.map__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 43px;
+    padding-top: 110px;
+}
+
+.map__content {
+    max-width: 898px;
+    height: 516px;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-bottom: 40%;
+    /* height: 0; */
+    overflow: hidden;
+}
+
+.iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* footer */
+.footer .container {
+    padding: 0;
+}
+
+.footer-content {
+    display: flex;
+    padding-top: 60px;
+}
+
+.form {
+    background-color: #EEF2F7;
+    padding: 34px 65px 0 80px;
+}
+
+.form__title {
+    font-size: 32px;
+    line-height: 43px;
+}
+
+.form__fields {
+    max-width: 588px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 40px;
+    padding-top: 30px;
+}
+
+.form__input {
+    flex: 1 1 calc(50% - 20px);
+    height: 50px;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 17px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form__textarea {
+    flex: 1 1 100%;
+    max-width: 588px;
+    height: 178px;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 17px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+}
+
+.form__button {
+    flex: 1 1 100%;
+    max-width: 200px;
+    margin: 0 auto 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #C6C6C6;
+    color: grey;
+}
+
+.contacts {
+    padding-left: 20px;
+    padding-bottom: 50px;
+    max-width: 220px;
+}
+
+.contacts__title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 136%;
+}
+
+.contacts__line {
+    width: 110px;
+    height: 10px;
+    background-color: #FFD200;
+    border-radius: 5px;
+}
+
+.contacts__text {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 27px 0;
+}
+
+.contacts__info {
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.address {
+    padding-bottom: 20px;
+}
+
+.address__title {
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.telephone-mail {
+}
+
+.telephone-mail__title {
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.telephone {
+}
+.mail {
+}
+
+.working-hours {
+    padding-top: 20px;
+}
+.working-hours__title {
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+.working-hours__text {
+    font-size: 10px;
+    line-height: 13px;
+}
+
+.footer__image {
+    max-width: 1060px;
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+}
