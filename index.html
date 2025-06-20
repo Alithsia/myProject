@@ -17,10 +17,10 @@
               <a href="#" class="menu__link">← Назад</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">О проекте</a>
+              <a id="openPopupAboutProject" href="#" class="menu__link">О проекте</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Отзывы и обратная связь</a>
+              <a id="openPopupReviews" href="#" class="menu__link">Отзывы и обратная связь</a>
             </li>
             <li class="menu__item">
               <a href="#contacts" class="menu__link">Контакты</a>
@@ -376,8 +376,45 @@
       </div>
     </footer>
 
+    <div id="popupAboutProject" class="popup">
+      <div class="popup__content about-project">
+        <div class="about-project__content">
+          <h2 class="about-project__title">О проекте</h2>
+          <p class="about-project__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ad. At atque soluta voluptate asperiores! Iure optio aperiam dolorum et dolor eos mollitia neque. Nemo harum officia consectetur eligendi et! Inventore consequuntur similique, autem a, ut sit hic quibusdam porro veniam ipsam labore qui perferendis? Fugiat veniam provident odit possimus dolore ipsam facilis odio dicta aperiam, alias molestiae necessitatibus nobis reiciendis at commodi consectetur delectus magni et earum eius deleniti? Provident ratione fuga dolorum quibusdam laudantium dolore sint numquam porro natus rerum aliquid consectetur illo repudiandae reiciendis pariatur at, quis excepturi assumenda soluta. Ipsam, quos! Tempore tempora adipisci alias officiis, veniam aut dolores. Nulla labore laboriosam, eum officiis exercitationem, accusamus asperiores iusto deserunt ullam porro id illum harum praesentium eveniet quae obcaecati consectetur magnam unde consequuntur cupiditate voluptatibus? Laborum, iure, cum ipsum repellat maxime quam laboriosam mollitia impedit, ullam voluptate tempore quia quidem eveniet consectetur tempora rem natus eos blanditiis!</p>
+          <button id="closePopupAboutProject" class="popup__close">
+          <img src="images/close.svg" alt="Крестик"></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="popupReviews" class="popup">
+      <div class="popup__content reviews">
+        <div class="reviews__content">
+          <form class="form" action="#">
+            <h2 class="form__title reviews__title">Оставить отзыв</h2>
+            <div class="form__fields">
+              <input class="form__input reviews__field" type="text" name="name" placeholder="Имя" />
+              <input class="form__input reviews__field" type="tel" name="tel" placeholder="Ваш телефон" />
+              <textarea
+                class="form__textarea reviews__field"
+                name="comment"
+                id="comment"
+                rows="4"
+                cols="40"
+                placeholder="Опишите впечатления..."
+              ></textarea>
+            <button class="form__button" type="submit">Отправить</button>
+            </div>
+          </form>
+          <button id="closePopupReviews" class="popup__close">
+            <img src="images/close.svg" alt="Крестик"></button>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
+

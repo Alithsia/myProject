@@ -148,3 +148,41 @@ new Splide("#districts-carousel", {
 //       console.log(elem.landmarks.length);
 //     });
 //   });
+
+const openAboutProj = document.getElementById("openPopupAboutProject");
+const closeAboutProj = document.getElementById("closePopupAboutProject");
+const popupAboutProj = document.getElementById("popupAboutProject");
+
+openAboutProj.addEventListener("click", () => {
+  popupAboutProj.style.display = "flex";
+});
+
+closeAboutProj.addEventListener("click", () => {
+  popupAboutProj.style.display = "none";
+});
+
+// закрытие по клику вне окна
+popupAboutProj.addEventListener("click", (e) => {
+  if (e.target === popupAboutProj) {
+    popupAboutProj.style.display = "none";
+  }
+});
+
+const openReviews = document.getElementById("openPopupReviews");
+const closeReviews = document.getElementById("closePopupReviews");
+const popupReviews = document.getElementById("popupReviews");
+
+openReviews.addEventListener("click", () => {
+  popupReviews.style.display = "flex";
+});
+
+closeReviews.addEventListener("click", () => {
+  popupReviews.style.display = "none";
+});
+
+// закрытие по клику вне окна
+popupReviews.addEventListener("click", (e) => {
+  if (e.target === popupReviews) {
+    popupReviews.style.display = "none";
+  }
+});
